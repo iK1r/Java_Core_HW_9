@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        MyArrayList arrayList = new MyArrayList();
+        MyArrayList<String> arrayList = new MyArrayList<>();
 
         arrayList.add("one");
         arrayList.add("two");
@@ -17,7 +17,7 @@ public class Main {
         System.out.println(arrayList.get(1));
         System.out.println(arrayList.size());
 
-        MyLinkedList linkedList = new MyLinkedList();
+        MyLinkedList<String> linkedList = new MyLinkedList<>();
 
         linkedList.add("A");
         linkedList.add("B");
@@ -34,7 +34,7 @@ public class Main {
         System.out.println(linkedList.get(1));
         System.out.println(linkedList.size());
 
-        MyQueue queue = new MyQueue();
+        MyQueue<String> queue = new MyQueue<>();
 
         queue.add("first");
         queue.add("second");
@@ -45,7 +45,7 @@ public class Main {
         System.out.println(queue.poll());
         System.out.println(queue.size());
 
-        MyStack stack = new MyStack();
+        MyStack<String> stack = new MyStack<>();
 
         stack.push("first");
         stack.push("second");
@@ -56,7 +56,7 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println(stack.size());
 
-        MyHashMap hashMap = new MyHashMap();
+        MyHashMap<String, Object> hashMap = new MyHashMap<>();
 
         hashMap.put("name", "Kirill");
         hashMap.put("age", 25);
