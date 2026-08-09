@@ -1,5 +1,3 @@
-package hw9;
-
 public class MyStack<T> {
     private Object[] array = new Object[10];
     private int size = 0;
